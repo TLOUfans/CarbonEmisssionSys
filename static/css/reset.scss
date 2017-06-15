@@ -1,0 +1,248 @@
+.utils-bar {
+  border-bottom: 2px solid rgba(255, 255, 255, 0.9);
+  margin-bottom: 6px;
+  padding: 6px 0 6px 0;
+  color: #fff;
+  .el-form-item{
+    margin: 12px;
+  }
+}
+
+.el-pagination {
+  color: #fff;
+  .el-pager {
+    color: rgba(255, 255, 255, 0.9);
+  }
+  button[type="button"] {
+    background: rgba(0, 0, 0, 0.2);
+  }
+  .el-pager .number {
+    background: rgba(0, 0, 0, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.9);
+  }
+  .el-pagination__jump input[type="number"] {
+    background: rgba(0, 0, 0, 0.2);
+    color: white;
+  }
+}
+
+textarea.el-textarea__inner {
+  min-height: 100px;
+}
+
+.el-dialog__close {
+  color: black;
+}
+
+.el-button {
+  background-color: rgba(255, 255, 255, 0.29);
+  border: 1px solid #fff;
+}
+
+.el-button--primary {
+  background-color: rgba(32, 160, 255, 0.29);
+  border: 1px solid rgb(32, 160, 255);
+  color: rgb(32, 160, 255);
+}
+
+.el-button--success {
+  background-color: rgba(19, 206, 102, 0.29);
+  border: 1px solid rgb(19, 206, 102);
+  color: rgb(19, 206, 102);
+}
+
+.el-button--danger {
+  background-color: rgba(255, 73, 73, 0.29);
+  border: 1px solid rgb(255, 73, 73);
+  color: rgb(255, 73, 73);
+}
+
+$menu-color: rgba(0, 0, 0, 0.7);
+$menu-bk-color: rgba(255, 255, 255, 0.7);
+$menu-hover-bk-color: rgba(0, 0, 0, 0.2);
+$menu-shadow-color: rgba(0, 0, 0, 0.7);
+.el-menu {
+  background: $menu-bk-color;
+  box-shadow: inset 0px 1px 2px 0px $menu-shadow-color;
+  color: rgba(0, 0, 0, 0.7);
+  .el-submenu__title {
+    color: $menu-color;
+    background: $menu-hover-bk-color;
+  }
+  .el-submenu__title:hover {
+    color: $menu-color;
+    background: $menu-bk-color;
+  }
+  .el-menu-item:hover {
+    color: $menu-color;
+    background: $menu-hover-bk-color;
+  }
+  .el-menu-item {
+    color: $menu-color;
+  }
+  .el-menu-item.is-active {
+    color: $menu-color;
+  }
+}
+
+.el-submenu {
+  background: rgba(255, 255, 255, 0.1);
+  .el-menu {
+    background: rgba(255, 255, 255, 0.1);
+  }
+}
+
+$table-color: rgba(0, 0, 0, 0.7);
+$table-bk-color: rgba(255, 255, 255, 0.5);
+$table-th-bk-color: rgba(255, 255, 255, 0.9);
+$table-hover-bk-color: rgba(32, 160, 255, 0.4);
+$table-border-color: rgba(0, 0, 0, 0.1);
+$table-form-bk-color: rgba(0, 0, 0, 0.33);
+$table-shadow-color: black;
+.el-table--enable-row-hover .el-table__body tr:hover > td {
+  background: $table-hover-bk-color;
+  color: $table-color;
+}
+
+.el-table {
+  padding: 0;
+  background: none;
+  border-bottom: 1px solid $table-border-color;
+  border-left: 1px solid $table-border-color;
+  .el-table__body-wrapper {
+    background: $table-bk-color;
+  }
+  thead {
+    tr {
+      box-shadow: inset 2px -6px 20px 0px rgb(0,0,0);
+    }
+  }
+  tr {
+    background: none;
+    td {
+      background: $table-bk-color;
+      border-right: 1px solid $table-border-color;
+      border-bottom: 1px solid $table-border-color;
+      .cell {
+        color: $table-color;
+        i {
+          color: $table-color;
+        }
+      }
+    }
+    th {
+      background: $table-th-bk-color;
+      border: 0;
+      border-right: 1px solid $table-border-color;
+      border-bottom: 1px solid $table-border-color;
+      .cell {
+        color: $table-color;
+        background: none;
+      }
+    }
+    th.is-leaf {
+      border-bottom: 1px solid $table-border-color;
+    }
+  }
+  tr:hover > td {
+    background: $table-bk-color;
+  }
+  tr.current-row > td {
+    background: $table-hover-bk-color;
+  }
+  .el-table__expanded-cell {
+    background: $table-form-bk-color;
+    form.el-form {
+      color: $table-th-bk-color;
+      label {
+        color: $table-th-bk-color;
+      }
+    }
+  }
+  .el-table__expanded-cell:hover {
+    background-color: $table-hover-bk-color !important;
+  }
+}
+
+.el-input__inner {
+  background: rgba(0, 0, 0, 0.3);
+  color: white;
+  border: 1px solid rgba(255, 255, 255, 0.6);
+}
+
+.el-input {
+  color: white;
+  .el-input-group__append {
+    background: rgba(0, 0, 0, 0.2);
+    color: white;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+  }
+}
+
+$placeholder-color:rgba(255,255,255,1);
+.el-input.is-disabled input.el-input__inner::-webkit-input-placeholder {
+  color: $placeholder-color
+}
+
+.el-input.is-disabled input.el-input__inner::-moz-placeholder {
+  color: $placeholder-color;
+}
+
+.el-input.is-disabled input.el-input__inner:-ms-input-placeholder {
+  color: $placeholder-color;
+}
+
+.el-input.is-disabled input.el-input__inner::placeholder {
+  color: $placeholder-color;
+}
+
+.el-breadcrumb {
+  .el-breadcrumb__item {
+    .el-breadcrumb__item__inner {
+      color: #fff;
+    }
+  }
+}
+
+.el-dialog.el-dialog--full {
+  background: rgba(255, 255, 255, 0.8);
+  .el-button {
+    color: rgba(0, 0, 0, 0.7);
+  }
+}
+
+.el-form {
+  .el-form-item__label {
+    color: rgba(255, 255, 255, 0.8);
+  }
+}
+
+#bk {
+  position: absolute;
+  z-index:-9;
+  overflow: hidden;
+  canvas{
+    overflow: hidden;
+    margin:0 auto;
+  }
+}
+#bk canvas::before{
+  background-color: #000;
+  height:100%;
+  width:100%;
+}
+
+$col-bk-color: rgba(255,255,255,0.7);
+$col-item-bk-color: rgba(0,0,0,0.6);
+.el-collapse{
+  .el-collapse-item__header{
+    background-color: $col-bk-color;
+  }
+  .el-collapse-item__wrap{
+    background-color: $col-item-bk-color;
+  }
+}
+
+.el-cascader__label{
+  color: white;
+}
